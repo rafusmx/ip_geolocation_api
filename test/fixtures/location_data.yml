@@ -1,0 +1,32 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  ip: 104.244.42.129
+  version: 0
+  latitude: 37.7755012512207
+  longitude: -122.41291809082031
+  continent: North America
+  country: United States
+  region: California
+  zip: 94103
+
+missing_data:
+  ip: "1.13.89.35"
+  version: 0
+  latitude: 53.35388946533203,
+  longitude: -6.243330001831055
+  continent: Europe
+  country: Ireland
+  region: Leinster
+  zip:
+
+googletagmanager:
+  ip: 192.178.56.234
+  version: ipv4
+  latitude: 37.419158935546875
+  longitude: -122.07540893554688
+  continent: North America
+  country: United States
+  region: California
+  zip: 94043
+

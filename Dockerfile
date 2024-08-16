@@ -1,59 +1,43 @@
 # syntax = docker/dockerfile:1
 
-# Make sure RUBY_VERSION matches the Ruby version in .ruby-version and Gemfile
 ARG RUBY_VERSION=3.3.4
 FROM registry.docker.com/library/ruby:$RUBY_VERSION-slim as base
 
-# Rails app lives here
-WORKDIR /rails
+WORKDIR /ip_geolocation_api
 
-# Set production environment
-ENV RAILS_ENV="production" \
-    BUNDLE_DEPLOYMENT="1" \
-    BUNDLE_PATH="/usr/local/bundle" \
-    BUNDLE_WITHOUT="development"
+ENV IPSTACK_KEY="a9ce77efa9c4f2a62ca4d4179c1a1e5a"
 
+FROM base
 
-# Throw-away build stage to reduce size of final image
-FROM base as build
+COPY Gemfile* /ip_geolocation_api/
 
 # Install packages needed to build gems
 RUN apt-get update -qq && \
-    apt-get install --no-install-recommends -y build-essential git libpq-dev libvips pkg-config
+apt-get install --no-install-recommends -y build-essential git libpq-dev curl libvips postgresql-client pkg-config
 
-# Install application gems
-COPY Gemfile Gemfile.lock ./
-RUN bundle install && \
-    rm -rf ~/.bundle/ "${BUNDLE_PATH}"/ruby/*/cache "${BUNDLE_PATH}"/ruby/*/bundler/gems/*/.git && \
-    bundle exec bootsnap precompile --gemfile
+RUN gem install bundler -v 2.5.15
+RUN gem install rails
 
-# Copy application code
 COPY . .
+RUN bundle install
 
-# Precompile bootsnap code for faster boot times
-RUN bundle exec bootsnap precompile app/ lib/
+EXPOSE 3000
 
+RUN touch $HOME/.bashrc
+RUN echo "alias ll='ls -alF'" >> $HOME/.bashrc
+RUN echo "alias la='ls -A'" >> $HOME/.bashrc
+RUN echo "alias l='ls -CF'" >> $HOME/.bashrc
+RUN echo "alias q='exit'" >> $HOME/.bashrc
+RUN echo "alias c='clear'" >> $HOME/.bashrc
 
-# Final stage for app image
-FROM base
+# ENTRYPOINT [ "/bin/bash" ]
 
-# Install packages needed for deployment
-RUN apt-get update -qq && \
-    apt-get install --no-install-recommends -y curl libvips postgresql-client && \
-    rm -rf /var/lib/apt/lists /var/cache/apt/archives
-
-# Copy built artifacts: gems, application
-COPY --from=build /usr/local/bundle /usr/local/bundle
-COPY --from=build /rails /rails
-
-# Run and own only the runtime files as a non-root user for security
-RUN useradd rails --create-home --shell /bin/bash && \
-    chown -R rails:rails db log storage tmp
-USER rails:rails
+LABEL author="Rafael E Massu S"
+LABEL version="0.0.1"
+LABEL description="IP Geolocation API Rails app"
 
 # Entrypoint prepares the database.
-ENTRYPOINT ["/rails/bin/docker-entrypoint"]
+ENTRYPOINT ["/ip_geolocation_api/bin/docker-entrypoint"]
 
 # Start the server by default, this can be overwritten at runtime
-EXPOSE 3000
-CMD ["./bin/rails", "server"]
+# CMD ["./bin/rails", "server"]

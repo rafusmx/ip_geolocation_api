@@ -28,4 +28,10 @@
 #       enabled: "ON"
 
 en:
-  hello: "Hello world"
+  activerecord:
+    errors:
+      messages:
+        models:
+          invalid_ip_address: Invalid IP address
+          invalid_url_address: Invalid URL address
+

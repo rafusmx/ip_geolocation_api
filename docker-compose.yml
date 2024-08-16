@@ -1,0 +1,37 @@
+services:
+  db:
+    image: postgres:14.13-alpine
+    container_name: postgres-ipgeo
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    command: "postgres -c 'max_connections=100'"
+    environment:
+      POSTGRES_DB: ip_geolocation
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: useless4demo
+    ports:
+      - "5432:5432"
+
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: "bundle exec rails s -p 3000 -b '0.0.0.0'"
+    container_name: ip-geolocation-api
+    environment:
+      DB_HOST: db
+      DB_NAME: ip_geolocation
+      DB_USERNAME: postgres
+      DB_PASSWORD: useless4demo
+    volumes:
+      - .:/ip_geolocation_api
+    ports:
+      - "3000:3000"
+    depends_on:
+      - db
+
+volumes:
+  postgres_data: {}
+networks:
+  default:
+    name: ip_geolocation_api_default

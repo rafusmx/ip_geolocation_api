@@ -1,0 +1,54 @@
+ip,version,latitude,longitude,continent,country,region,zip,url
+162.158.174.167,ipv4,32.8054313659668,-96.814231872558,North America,United States,Texas,75219
+212.15.154.127,ipv4,32.8054313659668,-96.814231872558,Europe,Ukraine,Kyiv City,01011
+112.134.54.227,ipv4,6.934999942779541,79.84400177001953,Asia,Sri Lanka,Western,00100
+12.234.14.25,ipv4,37.54399871826172,-77.45069885253906,North America,United States,Virginia,23232
+192.178.52.228,ipv4,32.8054313659668,-96.814231872558,North America,United States,California,94043
+142.251.34.42,ipv4,20.714479446411133,-100.44029998779297,North America,Mexico,Querétaro,76000
+31.13.89.35,ipv4,53.35388946533203,-6.243330001831055,Europe,Ireland,Leinster,
+104.244.42.129,ipv4,37.7755012512207,-122.41291809082031,North America,United States,California,94103,ajax.googleapis.com
+192.178.56.174,ipv4,37.419158935546875,-122.07540893554688,North America,United States,California,94043,facebook.com
+192.178.52.174,ipv4,37.419158935546875,-122.07540893554688,North America,United States,California,94043,twitter.com
+192.0.77.48,ipv4,33.97785186767578,-118.44526672363281,North America,United States,California,90292,google.com
+31.13.89.174,ipv4,53.35388946533203,-6.243330001831055,Europe,Ireland,Leinster,,youtube.com
+192.178.52.136,ipv4,37.419158935546875,-122.07540893554688,North America,United States,California,94043,s.w.org
+150.171.22.12,ipv4,47.68050003051758,-122.12094116210938,North America,United States,Washington,98052,instagram.com
+192.178.56.234,ipv4,37.419158935546875,-122.07540893554688,North America,United States,California,94043,googletagmanager.com
+192.178.52.238,ipv4,37.419158935546875,-122.07540893554688,North America,United States,California,94043,linkedin.com
+66.155.40.24,ipv4,43.630409240722656,-79.47657012939453,North America,Canada,Ontario,M8V 1A1,docs.google.com
+151.101.192.84,ipv4,37.769168853759766,-122.44249725341797,North America,United States,California,94117,gmpg.org
+172.217.4.163,ipv4,34.04563903808594,-118.24163818359375,North America,United States,California,90013,pinterest.com
+198.143.164.252,ipv4,41.84885025024414,-87.67124938964844,North America,United States,Illinois,60608,fonts.gstatic.com
+208.80.153.224,ipv4,32.8054313659668,-96.8142318725586,North America,United States,Texas,75219,wordpress.org
+192.178.56.142,ipv4,37.419158935546875,-122.07540893554688,North America,United States,California,94043,en.wikipedia.org
+192.178.56.238,ipv4,37.419158935546875,-122.07540893554688,North America,United States,California,94043,youtu.be
+23.208.104.26,ipv4,20.5916690826416,-100.39167022705078,North America,Mexico,Querétaro,76000,goo.gl
+140.82.114.3,ipv4,37.76784896850586,-122.39286041259766,North America,United States,California,94107,itunes.apple.com
+67.199.248.11,ipv4,40.75080108642578,-73.9961166381836,North America,United States,New York,10001,github.com
+192.178.56.110,ipv4,37.419158935546875,-122.07540893554688,North America,United States,California,94043,bit.ly
+192.178.56.14,ipv4,37.419158935546875,-122.07540893554688,North America,United States,California,94043,play.google.com
+192.178.52.206,ipv4,37.419158935546875,-122.07540893554688,North America,United States,California,94043,cdnjs.cloudflare.com
+104.17.25.14,ipv4,40.738731384277344,-74.19452667236328,North America,United States,New Jersey,07103,vimeo.com
+162.159.138.60,ipv4,37.769168853759766,-122.44249725341797,North America,United States,California,94117,support.google.com
+192.178.56.132,ipv4,37.419158935546875,-122.07540893554688,North America,United States,California,94043,google-analytics.com
+192.178.57.42,ipv4,38.98371887207031,-77.38275909423828,North America,United States,Virginia,20170,maps.googleapis.com
+18.161.172.123,ipv4,32.8054313659668,-96.8142318725586,North America,United States,Texas,75219,flickr.com
+87.240.132.67,ipv4,59.93904113769531,30.3157901763916,Asia,Russia,St.-Petersburg,195269,vk.com
+72.21.81.130,ipv4,33.97623062133789,-118.41709899902344,North America,United States,California,90094,t.co
+151.101.1.140,ipv4,37.769168853759766,-122.44249725341797,North America,United States,California,94117,reddit.com
+52.94.236.248,ipv4,39.043701171875,-77.47419738769531,North America,United States,Virginia,20147,amazon.com
+162.159.152.4,ipv4,37.769168853759766,-122.44249725341797,North America,United States,California,94117,medium.com
+192.178.52.142,ipv4,37.419158935546875,-122.07540893554688,North America,United States,California,94043,sites.google.com
+142.251.34.46,ipv4,20.714479446411133,-100.44029998779297,North America,Mexico,Querétaro,76000,chrome.google.com
+172.67.1.191,ipv4,37.76784896850586,-122.39286041259766,North America,United States,California,94107,creativecommons.org
+20.231.239.246,ipv4,38.7130012512207,-78.15899658203125,North America,United States,Virginia,22747,microsoft.com
+142.251.34.14,ipv4,20.714479446411133,-100.44029998779297,North America,Mexico,Querétaro,76000,developers.google.com
+23.194.202.8,ipv4,31.809999465942383,-106.41999816894531,North America,United States,Texas,79906,adobe.com
+143.204.165.74,ipv4,32.8054313659668,-96.8142318725586,North America,United States,Texas,75219,soundcloud.com
+151.101.193.111,ipv4,37.769168853759766,-122.44249725341797,North America,United States,California,94117,theguardian.com
+192.178.57.14,ipv4,38.98371887207031,-77.38275909423828,North America,United States,Virginia,20170,apis.google.com
+147.67.210.30,ipv4,49.616241455078125,6.1062397956848145,Europe,Luxembourg,Luxembourg,2326,ec.europa.eu
+192.178.56.193,ipv4,37.419158935546875,-122.07540893554688,North America,United States,California,94043,lh3.googleusercontent.com
+104.16.133.229,ipv4,37.330528259277344,-121.83822631835938,North America,United States,California,95122,cloudflare.com
+151.101.1.164,ipv4,37.769168853759766,-122.44249725341797,North America,United States,California,94117,nytimes.com
+104.18.11.207,ipv4,35.69628143310547,139.73855590820312,Asia,Japan,Tokyo,162-0843,maxcdn.bootstrapcdn.com
